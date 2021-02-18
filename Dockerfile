@@ -1,4 +1,4 @@
-FROM golang:1.14 AS build
+FROM alpine:3.4 AS build
 ADD . /src
 WORKDIR /src
 RUN go get -d -v -t
